@@ -29,7 +29,7 @@ function draw() {
     Engine.update(engine);
 
     ground.display();
-    dustbin1.display();
+    dustbin.display();
     dustbin2.display();
     dustbin3.display();
     ball.display();
