@@ -14,11 +14,11 @@ function setup() {
     createCanvas(800, 700);
     engine = Engine.create();
     world = engine.world;
-    ball = new PAPER(100,200,20);
-    ground = new GROUND(750,580,1500,20)
-    dustbin1 = new DUSTBIN (630,657,20,120)
-    dustbin2 = new DUSTBIN (740, 657, 20, 120)
-    dustbin3 = new DUSTBIN (686, 690, 100, 20)
+    ball = new PAPER(60,200,20);
+    ground = new GROUND(750,400,1500,30);
+    dustbin1 = new DUSTBIN (630,325,20,120);
+    dustbin2 = new DUSTBIN (740, 325, 20, 120);
+    dustbin3 = new DUSTBIN (686, 375, 100, 20);
     Engine.run(engine);  
 }
 
@@ -27,13 +27,14 @@ function draw() {
   background(0);
     
     Engine.update(engine);
-
+    
     ground.display();
-    dustbin.display();
+    ball.display();
+    dustbin1.display();
+    dustbin1.display();
     dustbin2.display();
     dustbin3.display();
-    ball.display();
-
+    
   drawSprites();
 }
 
